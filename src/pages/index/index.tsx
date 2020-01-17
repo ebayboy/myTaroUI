@@ -1,8 +1,9 @@
 import Taro, { Component, Config } from "@tarojs/taro";
-import { View, ScrollView, Swiper, SwiperItem } from "@tarojs/components";
+import { Text, View } from "@tarojs/components";
 
 import "./index.scss";
 import AtIconTest from "../../atcomponent/base/atIconTest";
+import AtButtonTest from "../../atcomponent/base/atButton";
 
 export default class Index extends Component {
   /**
@@ -40,7 +41,9 @@ export default class Index extends Component {
   }
 
   render() {
+
     /* Swiper最高150， 当超过这个高度使用scrollview进行滚动，以显示全部内容 */
+    /*
     const scrollStyle = {
       height: "150px"
     };
@@ -51,27 +54,18 @@ export default class Index extends Component {
       "background-color": "rgb(241,241,241)",
       color: "#333"
     };
+    */
 
     return (
-      <ScrollView
-        className="scrollview"
-        scrollY
-        scrollWithAnimation
-        scrollTop={scrollTop}
-        style={scrollStyle}
-        lowerThreshold={Threshold}
-        upperThreshold={Threshold}
-        onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
-        onScroll={this.onScroll}
-      >
-        <View className="index" style={vStyleA}>
-          <Swiper>
-            <SwiperItem>
-              <AtIconTest></AtIconTest>
-            </SwiperItem>
-          </Swiper>
-        </View>
-      </ScrollView>
+      <View className="container">
+
+        <Text>AtButtonTest</Text>
+        <AtButtonTest></AtButtonTest>
+
+        <Text>AtIconTest</Text>
+        <AtIconTest></AtIconTest>
+      </View>
+
     );
   }
 }
