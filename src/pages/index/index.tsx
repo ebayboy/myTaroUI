@@ -4,6 +4,7 @@ import { Text, View } from "@tarojs/components";
 import "./index.scss";
 import AtIconTest from "../../atcomponent/base/atIconTest";
 import AtButtonTest from "../../atcomponent/base/atButton";
+import AtFabTest from "../../atcomponent/atFabTest";
 
 export default class Index extends Component {
   /**
@@ -64,6 +65,9 @@ export default class Index extends Component {
 
         <Text>AtIconTest</Text>
         <AtIconTest></AtIconTest>
+
+        <Text>AtFabTest</Text>
+        <AtFabTest></AtFabTest>
       </View>
 
     );
