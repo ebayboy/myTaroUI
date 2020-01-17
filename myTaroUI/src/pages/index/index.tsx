@@ -1,9 +1,11 @@
-import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
-import './index.scss'
+import Taro, { Component, Config } from "@tarojs/taro";
+import { View, Text } from "@tarojs/components";
+
+import { AtButton } from "taro-ui";
+
+import "./index.scss";
 
 export default class Index extends Component {
-
   /**
    * 指定config的类型声明为: Taro.Config
    *
@@ -12,24 +14,24 @@ export default class Index extends Component {
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
   config: Config = {
-    navigationBarTitleText: '首页'
-  }
+    navigationBarTitleText: "首页"
+  };
 
-  componentWillMount () { }
+  componentWillMount() {}
 
-  componentDidMount () { }
+  componentDidMount() {}
 
-  componentWillUnmount () { }
+  componentWillUnmount() {}
 
-  componentDidShow () { }
+  componentDidShow() {}
 
-  componentDidHide () { }
+  componentDidHide() {}
 
-  render () {
+  render() {
     return (
-      <View className='index'>
-        <Text>Hello world!</Text>
+      <View className="index">
+        <AtButton type="primary">按钮文案</AtButton>
       </View>
-    )
+    );
   }
 }
