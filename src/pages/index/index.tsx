@@ -1,5 +1,5 @@
 import Taro, { Component, Config } from "@tarojs/taro";
-import { Text, View } from "@tarojs/components";
+import { View } from "@tarojs/components";
 
 import "./index.scss";
 import AtIconTest from "../../atcomponent/base/atIconTest";
@@ -7,6 +7,7 @@ import AtButtonTest from "../../atcomponent/base/atButton";
 import AtFabTest from "../../atcomponent/base/atFabTest";
 import AtAvatarTest from "../../atcomponent/view/atAvatarTest";
 import ArticleTest from "../../atcomponent/view/articleTest";
+import AtBadgeTest from "../../atcomponent/view/atBadgeTest";
 
 export default class Index extends Component {
   /**
@@ -35,13 +36,12 @@ export default class Index extends Component {
 
   componentDidHide() {}
 
+  /*
   onScrollToUpper() {}
-
-  // or 使用箭头函数
-  // onScrollToUpper = () => {}
   onScroll(e) {
     console.log(e.detail);
   }
+  */
 
   render() {
     /* Swiper最高150， 当超过这个高度使用scrollview进行滚动，以显示全部内容 */
@@ -65,6 +65,7 @@ export default class Index extends Component {
         <AtFabTest></AtFabTest>
         <AtAvatarTest></AtAvatarTest>
         <ArticleTest></ArticleTest>
+        <AtBadgeTest></AtBadgeTest>
       </View>
     );
   }
