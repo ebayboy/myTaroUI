@@ -1,8 +1,8 @@
 {
-  "miniprogramRoot": "./dist",
+  "miniprogramRoot": "./",
   "projectname": "myTaroUI",
   "description": "myTaroUI",
-  "appid": "wxbe199dbf0f647245",
+  "appid": "touristappid",
   "setting": {
     "urlCheck": true,
     "es6": false,
