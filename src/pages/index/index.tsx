@@ -1,7 +1,7 @@
 import Taro, { Component, Config } from "@tarojs/taro";
 import { View, ScrollView } from "@tarojs/components";
 
-import { AtButton } from "taro-ui";
+import { AtButton, AtIcon } from "taro-ui";
 
 import "./index.scss";
 
@@ -67,6 +67,7 @@ export default class Index extends Component {
       >
         <View className="index" style={vStyleA}>
           <AtButton type="primary">按钮文案</AtButton>
+          <AtIcon value='clock' size='30' color='#F00'></AtIcon>
         </View>
       </ScrollView>
     );
