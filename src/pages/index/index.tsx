@@ -1,9 +1,8 @@
 import Taro, { Component, Config } from "@tarojs/taro";
-import { View, ScrollView } from "@tarojs/components";
-
-import { AtButton, AtIcon } from "taro-ui";
+import { View, ScrollView, Swiper, SwiperItem } from "@tarojs/components";
 
 import "./index.scss";
+import AtIconTest from "../../atcomponent/base/atIconTest";
 
 export default class Index extends Component {
   /**
@@ -66,8 +65,11 @@ export default class Index extends Component {
         onScroll={this.onScroll}
       >
         <View className="index" style={vStyleA}>
-          <AtButton type="primary">按钮文案</AtButton>
-          <AtIcon value='clock' size='30' color='#F00'></AtIcon>
+          <Swiper>
+            <SwiperItem>
+              <AtIconTest></AtIconTest>
+            </SwiperItem>
+          </Swiper>
         </View>
       </ScrollView>
     );
