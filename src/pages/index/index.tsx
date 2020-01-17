@@ -4,7 +4,7 @@ import { Text, View } from "@tarojs/components";
 import "./index.scss";
 import AtIconTest from "../../atcomponent/base/atIconTest";
 import AtButtonTest from "../../atcomponent/base/atButton";
-import AtFabTest from "../../atcomponent/atFabTest";
+import AtFabTest from "../../atcomponent/base/atFabTest";
 
 export default class Index extends Component {
   /**
