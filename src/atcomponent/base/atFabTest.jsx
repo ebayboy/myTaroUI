@@ -3,7 +3,7 @@
 一个屏幕上建议只使用一个浮动操作按钮，它应该只代表最常见的操作。 */
 
 import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import { Text, View } from '@tarojs/components'
 
 import { AtButton, AtFab } from 'taro-ui';
 export default class AtFabTest extends Component {
@@ -14,6 +14,7 @@ export default class AtFabTest extends Component {
     render() {
         return (
             <View>
+                <Text>AtFabTest</Text>
                 <AtFab>
                     <Text className='at-fab__icon at-icon at-icon-menu' ></Text>
                 </AtFab>

@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import { View,Text } from '@tarojs/components'
 
 import { AtButton } from 'taro-ui';
 export default class AtButtonTest extends Component {
@@ -10,6 +10,7 @@ export default class AtButtonTest extends Component {
     render() {
         return (
             <View>
+                <Text>AtButtonTest</Text>
                 <AtButton>normal</AtButton>
                 <AtButton type='primary'>primary</AtButton>
                 <AtButton type='secondary' >secondary</AtButton>

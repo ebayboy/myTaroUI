@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import { Text, View } from '@tarojs/components'
 
 import { AtIcon } from 'taro-ui';
 export default class AtIconTest extends Component {
@@ -10,6 +10,7 @@ export default class AtIconTest extends Component {
     render() {
         return (
             <View>
+                <Text>AtIconTest</Text>
                 <AtIcon value='clock' size='30' color='#F00'></AtIcon>
             </View>
         )

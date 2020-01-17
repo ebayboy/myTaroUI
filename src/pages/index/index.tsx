@@ -5,6 +5,7 @@ import "./index.scss";
 import AtIconTest from "../../atcomponent/base/atIconTest";
 import AtButtonTest from "../../atcomponent/base/atButton";
 import AtFabTest from "../../atcomponent/base/atFabTest";
+import AtAvatarTest from "../../atcomponent/view/atAvatarTest";
 
 export default class Index extends Component {
   /**
@@ -42,7 +43,6 @@ export default class Index extends Component {
   }
 
   render() {
-
     /* Swiper最高150， 当超过这个高度使用scrollview进行滚动，以显示全部内容 */
     /*
     const scrollStyle = {
@@ -59,17 +59,11 @@ export default class Index extends Component {
 
     return (
       <View className="container">
-
-        <Text>AtButtonTest</Text>
         <AtButtonTest></AtButtonTest>
-
-        <Text>AtIconTest</Text>
         <AtIconTest></AtIconTest>
-
-        <Text>AtFabTest</Text>
         <AtFabTest></AtFabTest>
+        <AtAvatarTest></AtAvatarTest>
       </View>
-
     );
   }
 }
