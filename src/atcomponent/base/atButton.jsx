@@ -14,8 +14,8 @@ export default class AtButtonTest extends Component {
                 <AtButton type='primary'>primary</AtButton>
                 <AtButton type='secondary' >secondary</AtButton>
 
-                <AtButton type='primary' size='small'>smarll</AtButton>
-                <AtButton type='primary' size='normal' ></AtButton>
+                <AtButton type='primary' size='small'>smarll-size</AtButton>
+                <AtButton type='primary' size='normal' >normal-size</AtButton>
 
                 <AtButton type='primary' loading >loading</AtButton>
             </View>
