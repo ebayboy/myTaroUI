@@ -6,6 +6,7 @@ import AtIconTest from "../../atcomponent/base/atIconTest";
 import AtButtonTest from "../../atcomponent/base/atButton";
 import AtFabTest from "../../atcomponent/base/atFabTest";
 import AtAvatarTest from "../../atcomponent/view/atAvatarTest";
+import ArticleTest from "../../atcomponent/view/articleTest";
 
 export default class Index extends Component {
   /**
@@ -63,6 +64,7 @@ export default class Index extends Component {
         <AtIconTest></AtIconTest>
         <AtFabTest></AtFabTest>
         <AtAvatarTest></AtAvatarTest>
+        <ArticleTest></ArticleTest>
       </View>
     );
   }
