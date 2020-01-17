@@ -2,6 +2,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
 
+/* 由于 app.js 添加的样式文件 在小程序上只能影响 page 样式,不能影响 component 的样式，所以在自定义组件里面使用时，你可能需要再次引入 */
 import './articleTest.scss'
 
 export default class ArticleTest extends Component {
