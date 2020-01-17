@@ -1,5 +1,5 @@
 import Taro, { Component, Config } from "@tarojs/taro";
-import { View } from "@tarojs/components";
+import { View, ScrollView } from "@tarojs/components";
 
 import { AtButton } from "taro-ui";
 
@@ -13,6 +13,11 @@ export default class Index extends Component {
    * 对于像 navigationBarTextStyle: 'black' 这样的推导出的类型是 string
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
+
+  constructor() {
+    super(...arguments);
+  }
+
   config: Config = {
     navigationBarTitleText: "首页"
   };
@@ -27,13 +32,43 @@ export default class Index extends Component {
 
   componentDidHide() {}
 
+  onScrollToUpper() {}
+
+  // or 使用箭头函数
+  // onScrollToUpper = () => {}
+  onScroll(e) {
+    console.log(e.detail);
+  }
+
   render() {
+    /* Swiper最高150， 当超过这个高度使用scrollview进行滚动，以显示全部内容 */
+    const scrollStyle = {
+      height: "150px"
+    };
+    const scrollTop = 0;
+    const Threshold = 20;
+    const vStyleA = {
+      height: "150px",
+      "background-color": "rgb(241,241,241)",
+      color: "#333"
+    };
+
     return (
-      <View className="index">
-        <AtButton type="primary" className="my-button">
-          按钮文案
-        </AtButton>
-      </View>
+      <ScrollView
+        className="scrollview"
+        scrollY
+        scrollWithAnimation
+        scrollTop={scrollTop}
+        style={scrollStyle}
+        lowerThreshold={Threshold}
+        upperThreshold={Threshold}
+        onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
+        onScroll={this.onScroll}
+      >
+        <View className="index" style={vStyleA}>
+          <AtButton type="primary">按钮文案</AtButton>
+        </View>
+      </ScrollView>
     );
   }
 }
