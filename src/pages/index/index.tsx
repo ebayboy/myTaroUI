@@ -10,6 +10,7 @@ import ArticleTest from "../../atcomponent/view/articleTest";
 import AtBadgeTest from "../../atcomponent/view/atBadgeTest";
 import AtCountDownTest from "../../atcomponent/view/atCountdownTest";
 import AtCurtainTest from  "../../atcomponent/view/atCurtainTest"
+import AtLoadMoreTest from "../../atcomponent/view/atLoadMoreTest";
 
 export default class Index extends Component {
   /**
@@ -70,6 +71,7 @@ export default class Index extends Component {
         <AtBadgeTest></AtBadgeTest>
         <AtCountDownTest></AtCountDownTest>
         <AtCurtainTest></AtCurtainTest>
+        <AtLoadMoreTest></AtLoadMoreTest>
       </View>
     );
   }
