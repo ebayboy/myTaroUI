@@ -3,7 +3,7 @@ import { Text, View } from '@tarojs/components'
 
 import { AtNoticebar } from 'taro-ui'
 
-import './atNoticebarTest.scss';
+import './atNoticebarTest.scss'
 
 export default class AtNoticebarTest extends Component {
     constructor() {

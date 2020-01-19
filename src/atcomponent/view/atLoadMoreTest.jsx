@@ -3,7 +3,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { Text, View } from '@tarojs/components'
 import { AtLoadMore } from 'taro-ui'
 
-import './atLoadMoreTest.scss';
+import './atLoadMoreTest.scss'
 
 export default class AtLoadMoreTest extends Component {
     constructor() {
