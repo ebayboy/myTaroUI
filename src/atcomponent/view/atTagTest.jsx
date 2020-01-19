@@ -14,7 +14,6 @@ export default class AtTagTest extends Component {
     }
 
     tagOnclick() {
-        console.log("click")
         this.setState({
             active: !this.state.active
         })
