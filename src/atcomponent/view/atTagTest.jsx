@@ -9,11 +9,12 @@ export default class AtTagTest extends Component {
     constructor() {
         super(...arguments)
         this.state = {
-            active: true
+            active: 'true'
         }
     }
 
     tagOnclick() {
+        console.log("click")
         this.setState({
             active: !this.state.active
         })
@@ -23,10 +24,10 @@ export default class AtTagTest extends Component {
         return (
             <View>
                 <Text>base tag</Text>
-                <AtTag>标签</AtTag>
+                <AtTag >标签</AtTag>
                 <AtTag type='primary' circle>primary circle tag</AtTag>
                 <AtTag size='small'>small tag</AtTag>
-                <AtTag onClick={this.tagOnclick.bind(this)}>click tag</AtTag>
+                <AtTag active={this.state.active} onClick={this.tagOnclick.bind(this)}>click tag</AtTag>
             </View>
         )
 
