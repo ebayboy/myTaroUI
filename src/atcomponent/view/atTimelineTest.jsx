@@ -1,9 +1,9 @@
 
-import Taro, { Comp } from '@tarojs/taro'
+import Taro, { Component } from '@tarojs/taro'
 import { Text, View } from '@tarojs/components'
 import { AtTimeline } from 'taro-ui'
 
-import './atTimelineTest.scss'
+import 'taro-ui/dist/style/index.scss'
 
 export default class AtTimelineTest extends Component {
     constructor() {
