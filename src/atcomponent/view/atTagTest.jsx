@@ -2,8 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { Text, View } from '@tarojs/components'
 import { AtTag } from 'taro-ui'
 
-//import './atTagTest.scss'
-import 'taro-ui/dist/style/index.scss' // 全局引入一次即可
+import './atTagTest.scss'
 
 export default class AtTagTest extends Component {
 
