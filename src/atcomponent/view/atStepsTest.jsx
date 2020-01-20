@@ -1,11 +1,11 @@
+/* Steps 步骤条 */
+/* TODO: 'success':true, 'error': true 没生效 */
 
 import Taro, { Component } from '@tarojs/taro'
 import { Text, View } from '@tarojs/components'
 import { AtSteps } from 'taro-ui'
 
-import 'taro-ui/dist/style/index.scss'
-
-//import './AtStepsTest.scss';
+import './atStepsTest.scss';
 
 export default class AtStepsTest extends Component {
     constructor() {
@@ -19,9 +19,20 @@ export default class AtStepsTest extends Component {
 
     render() {
         const items = [
-            { 'title': 'step1', 'desc': 'step1 readme' },
+            { 'title': 'step1', 'desc': 'step1 readme', 'success': true },
             { 'title': 'step2', 'desc': 'step2 readme' },
-            { 'title': 'step3', 'desc': 'step3 readme' }
+            { 'title': 'step3', 'desc': 'step3 readme' },
+            {
+                'title': 'step4',
+                'desc': 'custom icon',
+                'icon': {
+                    value: 'camera',
+                    activeColor: '#fff',
+                    inactiveColor: '#78A4FA',
+                    size: '14',
+                }
+            },
+            { 'title': 'step5', 'desc': 'step3 readme', 'error': true }
         ]
 
         return (
