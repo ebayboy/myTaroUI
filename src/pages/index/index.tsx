@@ -9,13 +9,14 @@ import AtAvatarTest from "../../atcomponent/view/atAvatarTest";
 import ArticleTest from "../../atcomponent/view/articleTest";
 import AtBadgeTest from "../../atcomponent/view/atBadgeTest";
 import AtCountDownTest from "../../atcomponent/view/atCountdownTest";
-import AtCurtainTest from  "../../atcomponent/view/atCurtainTest"
+import AtCurtainTest from "../../atcomponent/view/atCurtainTest";
 import AtLoadMoreTest from "../../atcomponent/view/atLoadMoreTest";
 import AtNoticebarTest from "../../atcomponent/view/atNoticebarTest";
 import AtTagTest from "../../atcomponent/view/atTagTest";
 import AtTimelineTest from "../../atcomponent/view/atTimelineTest";
 import SwiperTest from "../../atcomponent/view/swipterTest";
 import AtDividerTest from "../../atcomponent/view/atDividerTest";
+import AtStepsTest from "../../atcomponent/view/atStepsTest";
 
 export default class Index extends Component {
   /**
@@ -82,6 +83,7 @@ export default class Index extends Component {
         <AtTimelineTest></AtTimelineTest>
         <SwiperTest></SwiperTest>
         <AtDividerTest></AtDividerTest>
+        <AtStepsTest></AtStepsTest>
       </View>
     );
   }
