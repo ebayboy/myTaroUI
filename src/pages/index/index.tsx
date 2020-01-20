@@ -17,6 +17,7 @@ import AtTimelineTest from "../../atcomponent/view/atTimelineTest";
 import SwiperTest from "../../atcomponent/view/swipterTest";
 import AtDividerTest from "../../atcomponent/view/atDividerTest";
 import AtStepsTest from "../../atcomponent/view/atStepsTest";
+import AtActionSheetTest from "../../atcomponent/feedback/atActionSheetTest";
 
 export default class Index extends Component {
   /**
@@ -84,6 +85,7 @@ export default class Index extends Component {
         <SwiperTest></SwiperTest>
         <AtDividerTest></AtDividerTest>
         <AtStepsTest></AtStepsTest>
+        <AtActionSheetTest></AtActionSheetTest>
       </View>
     );
   }
