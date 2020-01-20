@@ -3,22 +3,23 @@ import Taro, { Component } from '@tarojs/taro'
 import { Text, View } from '@tarojs/components'
 import { AtActionSheet, AtActionSheetItem } from 'taro-ui'
 
-import 'taro-ui/dist/style/index.scss'
+import 'taro-ui/dist/style/components/action-sheet.scss'
 
 export default class AtActionSheetTest extends Component {
     constructor() {
         super(...arguments)
 
         this.state = {
-            isOpened: true
+            isOpened: false
         }
     }
 
     handleCancel = () => {
-        Taro.showToast({
-            icon: 'none',
-            title: '点击了取消按钮'
-        })
+        this.showToast('点击了取消按钮')
+    }
+
+    handleClick = () => {
+        this.setState({ isOpened: true })
     }
 
     handleClose = () => {
@@ -37,7 +38,12 @@ export default class AtActionSheetTest extends Component {
 
         return (
             <View>
-                <AtActionSheet isOpened= {isOpened}
+                <View>
+                    <AtButton onClick={this.handleClick}>
+                        打开 ActionSheet
+                    </AtButton>
+                </View>
+                <AtActionSheet isOpened='false'
                     cancelText='取消'
                     title='头部标题可以用通过转义字符换行'
                     onCancel={this.handleCancel}
@@ -54,7 +60,7 @@ export default class AtActionSheetTest extends Component {
                         按钮二
                     </AtActionSheetItem>
                 </AtActionSheet>
-            </View >
+            </View>
         )
     }
 }
