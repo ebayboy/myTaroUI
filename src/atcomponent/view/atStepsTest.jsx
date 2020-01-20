@@ -10,7 +10,7 @@ import './atStepsTest.scss';
 export default class AtStepsTest extends Component {
     constructor() {
         super(...arguments)
-        this.state = { current: 0 }
+        this.state = { current: 1 }
     }
 
     onChange(current) {
@@ -20,10 +20,8 @@ export default class AtStepsTest extends Component {
     render() {
         const items = [
             { 'title': 'step1', 'desc': 'step1 readme', 'success': true },
-            { 'title': 'step2', 'desc': 'step2 readme' },
-            { 'title': 'step3', 'desc': 'step3 readme' },
             {
-                'title': 'step4',
+                'title': 'step2',
                 'desc': 'custom icon',
                 'icon': {
                     value: 'camera',
@@ -32,7 +30,7 @@ export default class AtStepsTest extends Component {
                     size: '14',
                 }
             },
-            { 'title': 'step5', 'desc': 'step3 readme', 'error': true }
+            { 'title': 'step3', 'desc': 'step3 readme', 'error': true }
         ]
 
         return (
