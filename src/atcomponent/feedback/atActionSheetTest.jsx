@@ -43,7 +43,7 @@ export default class AtActionSheetTest extends Component {
                         打开 ActionSheet
                     </AtButton>
                 </View>
-                <AtActionSheet isOpened='false'
+                <AtActionSheet isOpened={isOpened}
                     cancelText='取消'
                     title='头部标题可以用通过转义字符换行'
                     onCancel={this.handleCancel}
