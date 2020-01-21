@@ -42,7 +42,7 @@ export default class AtModalTest extends Component {
                     title='标题'
                     cancelText='取消'
                     confirmText='确定'
-                    content='京东凹凸实验室\n\r京东凹凸实验室\n\n'
+                    content='京东云VPCWAF\n\r京东云VPCWAF\n\n'
                     onCancel={this.handlerCancle.bind(this)}
                     onConfirm={this.handleConfirm.bind(this)}
                     onClose={this.handleClose.bind(this)}
