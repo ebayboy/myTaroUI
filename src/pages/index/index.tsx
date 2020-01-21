@@ -19,6 +19,7 @@ import AtDividerTest from "../../atcomponent/view/atDividerTest";
 import AtStepsTest from "../../atcomponent/view/atStepsTest";
 import AtActionSheetTest from "../../atcomponent/feedback/atActionSheetTest";
 import AtActivityIndicatorTest from "../../atcomponent/feedback/atActivityIndicatorTest";
+import AtModalTest from "../../atcomponent/feedback/atModalTest";
 
 export default class Index extends Component {
   /**
@@ -88,6 +89,7 @@ export default class Index extends Component {
         <AtStepsTest></AtStepsTest>
         <AtActionSheetTest></AtActionSheetTest>
         <AtActivityIndicatorTest></AtActivityIndicatorTest>
+        <AtModalTest></AtModalTest>
       </View>
     );
   }
