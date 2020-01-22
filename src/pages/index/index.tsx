@@ -21,6 +21,8 @@ import AtActionSheetTest from "../../atcomponent/feedback/atActionSheetTest";
 import AtActivityIndicatorTest from "../../atcomponent/feedback/atActivityIndicatorTest";
 import AtModalTest from "../../atcomponent/feedback/atModalTest";
 import AtProgressTest from "../../atcomponent/feedback/atProgressTest";
+import { AtToast } from "taro-ui";
+import AtToastTest from "../../atcomponent/feedback/atToastTest";
 
 export default class Index extends Component {
   /**
@@ -92,6 +94,7 @@ export default class Index extends Component {
         <AtActivityIndicatorTest></AtActivityIndicatorTest>
         <AtModalTest></AtModalTest>
         <AtProgressTest></AtProgressTest>
+        <AtToastTest></AtToastTest>
       </View>
     );
   }
