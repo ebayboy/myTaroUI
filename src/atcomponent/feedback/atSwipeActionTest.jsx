@@ -16,10 +16,6 @@ const INIT_STATE = {
     options: [{ text: '取消', style: { backgroundColor: '#6190E8' } }, { text: '确认', style: { backgroundColor: '#FF4949' } }]
 }
 
-const OPTIONS = {
-
-}
-
 export default class AtSwipeActionTest extends Component {
     constructor() {
         super(...arguments)
@@ -45,27 +41,32 @@ export default class AtSwipeActionTest extends Component {
     }
 
     handlerClickSA() {
+        console.log("isOpend:", this.state.isOpened)
         console.log(this.handlerClickSA.name)
     }
 
     handleronOpenedSA() {
+        console.log("isOpend:", this.state.isOpened)
         console.log(this.handleronOpenedSA.name)
     }
 
     handleronClosedSA() {
+        console.log("isOpend:", this.state.isOpened)
         console.log(this.handleronClosedSA.name)
     }
 
     render() {
         const { isOpened, disabled, autoClose, options } = this.state
 
+        console.log("isOpened:", isOpened)
+
         return (
             <View>
                 <View>
                     <AtButton type='primary' size='small'
-                    onClick={this.handlerClickBtn.bind(this, false, false,
-                        [{ text: '取消', style: { backgroundColor: '#6190E8' } }, { text: '确认', style: { backgroundColor: '#FF4949' } }]
-                    )} >一般使用场景</AtButton>
+                        onClick={this.handlerClickBtn.bind(this, false, false,
+                            [{ text: '取消', style: { backgroundColor: '#6190E8' } }, { text: '确认', style: { backgroundColor: '#FF4949' } }]
+                        )} >一般使用场景</AtButton>
                 </View>
 
                 <AtSwipeAction
@@ -74,8 +75,8 @@ export default class AtSwipeActionTest extends Component {
                     autoClose={autoClose}
                     options={options}
                     onClick={this.handlerClickSA.bind(this)}
-                    onClosed = {this.handleronClosedSA.bind(this)}
-                    onOpened = {this.handleronOpenedSA.bind(this)}
+                    onClosed={this.handleronClosedSA.bind(this)}
+                    onOpened={this.handleronOpenedSA.bind(this)}
                 >
                     <View>SwiperActionTest</View>
                 </AtSwipeAction>
