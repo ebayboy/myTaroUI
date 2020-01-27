@@ -27,6 +27,7 @@ import AtListTest from "../../atcomponent/feedback/atListTest";
 import AtMessageTest from "../../atcomponent/feedback/atMessageTest";
 import AtFormTest from "../../atcomponent/form/atFormTest";
 import AtInputTest from "../../atcomponent/form/atInputTest";
+import AtInputNumberTest from "../../atcomponent/form/atInputNumberTest";
 
 export default class Index extends Component {
   /**
@@ -104,6 +105,7 @@ export default class Index extends Component {
         <AtMessageTest></AtMessageTest>
         <AtFormTest></AtFormTest>
         <AtInputTest></AtInputTest>
+        <AtInputNumberTest></AtInputNumberTest>
       </View>
     );
   }
