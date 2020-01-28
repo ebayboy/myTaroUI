@@ -33,6 +33,7 @@ import AtCheckboxTest from "../../atcomponent/form/atCheckboxTest";
 import AtRateTest from "../../atcomponent/form/atRateTest";
 import AtSwitchTest from "../../atcomponent/form/atSwitchTest";
 import AtTextareaTest from "../../atcomponent/form/atTextareaTest";
+import PickerTest from "../../atcomponent/form/pickerTest";
 
 export default class Index extends Component {
   /**
@@ -116,6 +117,7 @@ export default class Index extends Component {
         <AtRateTest></AtRateTest>
         <AtSwitchTest></AtSwitchTest>
         <AtTextareaTest></AtTextareaTest>
+        <PickerTest></PickerTest>
       </View>
     );
   }
