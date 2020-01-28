@@ -32,6 +32,7 @@ import AtRadioTest from "../../atcomponent/form/atRadioTest";
 import AtCheckboxTest from "../../atcomponent/form/atCheckboxTest";
 import AtRateTest from "../../atcomponent/form/atRateTest";
 import AtSwitchTest from "../../atcomponent/form/atSwitchTest";
+import AtTextareaTest from "../../atcomponent/form/atTextareaTest";
 
 export default class Index extends Component {
   /**
@@ -114,6 +115,7 @@ export default class Index extends Component {
         <AtCheckboxTest></AtCheckboxTest>
         <AtRateTest></AtRateTest>
         <AtSwitchTest></AtSwitchTest>
+        <AtTextareaTest></AtTextareaTest>
       </View>
     );
   }
