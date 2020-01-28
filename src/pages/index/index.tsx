@@ -34,6 +34,7 @@ import AtRateTest from "../../atcomponent/form/atRateTest";
 import AtSwitchTest from "../../atcomponent/form/atSwitchTest";
 import AtTextareaTest from "../../atcomponent/form/atTextareaTest";
 import PickerTest from "../../atcomponent/form/pickerTest";
+import AtSearchBarTest from "../../atcomponent/form/atSearchBarTest";
 
 export default class Index extends Component {
   /**
@@ -118,6 +119,7 @@ export default class Index extends Component {
         <AtSwitchTest></AtSwitchTest>
         <AtTextareaTest></AtTextareaTest>
         <PickerTest></PickerTest>
+        <AtSearchBarTest></AtSearchBarTest>
       </View>
     );
   }
