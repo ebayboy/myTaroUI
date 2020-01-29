@@ -36,6 +36,7 @@ import AtTextareaTest from "../../atcomponent/form/atTextareaTest";
 import PickerTest from "../../atcomponent/form/pickerTest";
 import AtSearchBarTest from "../../atcomponent/form/atSearchBarTest";
 import AtSliderTest from "../../atcomponent/form/atSliderTest";
+import AtImagePickerTest from "../../atcomponent/form/atImagePickerTest";
 
 export default class Index extends Component {
   /**
@@ -122,6 +123,7 @@ export default class Index extends Component {
         <PickerTest></PickerTest>
         <AtSearchBarTest></AtSearchBarTest>
         <AtSliderTest></AtSliderTest>
+        <AtImagePickerTest></AtImagePickerTest>
       </View>
     );
   }
