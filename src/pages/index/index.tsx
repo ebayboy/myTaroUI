@@ -39,6 +39,7 @@ import AtSliderTest from "../../atcomponent/form/atSliderTest";
 import AtImagePickerTest from "../../atcomponent/form/atImagePickerTest";
 import AtRangeTest from "../../atcomponent/form/atRangeTest";
 import AtViewCSS from "../../atcomponent/layout/flex";
+import AtGridTest from "../../atcomponent/layout/atGridTest";
 
 export default class Index extends Component {
   /**
@@ -128,6 +129,7 @@ export default class Index extends Component {
         <AtImagePickerTest></AtImagePickerTest>
         <AtRangeTest></AtRangeTest>
         <AtViewCSS></AtViewCSS>
+        <AtGridTest></AtGridTest>
       </View>
     );
   }
