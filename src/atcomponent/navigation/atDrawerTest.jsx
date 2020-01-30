@@ -38,7 +38,7 @@ export default class AtDrawerTest extends Component {
                     show={this.state.show}
                     mask
                     onClose={this.handleClose.bind(this)}
-                    items={['item1', 'item2','item3']}
+                    items={['item1', 'item2', 'item3']}
                     onItemClick={this.handleItemClick.bind(this)}
                 />
             </View>
