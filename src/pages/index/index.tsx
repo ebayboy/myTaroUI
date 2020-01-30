@@ -40,6 +40,7 @@ import AtImagePickerTest from "../../atcomponent/form/atImagePickerTest";
 import AtRangeTest from "../../atcomponent/form/atRangeTest";
 import AtViewCSS from "../../atcomponent/layout/flex";
 import AtGridTest from "../../atcomponent/layout/atGridTest";
+import AtListTestNew from "../../atcomponent/layout/atListTestNew";
 
 export default class Index extends Component {
   /**
@@ -130,6 +131,7 @@ export default class Index extends Component {
         <AtRangeTest></AtRangeTest>
         <AtViewCSS></AtViewCSS>
         <AtGridTest></AtGridTest>
+        <AtListTestNew></AtListTestNew>
       </View>
     );
   }
