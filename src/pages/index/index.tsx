@@ -38,6 +38,7 @@ import AtSearchBarTest from "../../atcomponent/form/atSearchBarTest";
 import AtSliderTest from "../../atcomponent/form/atSliderTest";
 import AtImagePickerTest from "../../atcomponent/form/atImagePickerTest";
 import AtRangeTest from "../../atcomponent/form/atRangeTest";
+import AtViewCSS from "../../atcomponent/layout/flex";
 
 export default class Index extends Component {
   /**
@@ -126,6 +127,7 @@ export default class Index extends Component {
         <AtSliderTest></AtSliderTest>
         <AtImagePickerTest></AtImagePickerTest>
         <AtRangeTest></AtRangeTest>
+        <AtViewCSS></AtViewCSS>
       </View>
     );
   }
