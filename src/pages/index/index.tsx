@@ -42,6 +42,7 @@ import AtViewCSS from "../../atcomponent/layout/flex";
 import AtGridTest from "../../atcomponent/layout/atGridTest";
 import AtListTestNew from "../../atcomponent/layout/atListTestNew";
 import AtCardTest from "../../atcomponent/layout/atCardTest";
+import AtFloatLayoutTest from "../../atcomponent/layout/atFloatLayoutTest";
 
 export default class Index extends Component {
   /**
@@ -134,6 +135,7 @@ export default class Index extends Component {
         <AtGridTest></AtGridTest>
         <AtListTestNew></AtListTestNew>
         <AtCardTest></AtCardTest>
+        <AtFloatLayoutTest></AtFloatLayoutTest>
       </View>
     );
   }
