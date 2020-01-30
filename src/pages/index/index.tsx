@@ -47,6 +47,7 @@ import AtAccordionTest from "../../atcomponent/layout/atAccordionTest";
 import AtNavBarTest from "../../atcomponent/navigation/atNavBarTest";
 import AtTabBarTest from "../../atcomponent/navigation/AtTabBarTest";
 import AtTabsTest from "../../atcomponent/navigation/atTabsTest";
+import AtSegmentedControlTest from "../../atcomponent/navigation/AtSegmentedControlTest";
 
 export default class Index extends Component {
   /**
@@ -144,6 +145,7 @@ export default class Index extends Component {
         <AtNavBarTest></AtNavBarTest>
         <AtTabBarTest></AtTabBarTest>
         <AtTabsTest></AtTabsTest>
+        <AtSegmentedControlTest></AtSegmentedControlTest>
       </View>
     );
   }
