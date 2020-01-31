@@ -4,7 +4,7 @@ import { View } from '@tarojs/components'
 import { AtSearchBar, AtIndexes } from 'taro-ui'
 import 'taro-ui/dist/style/index.scss'
 
-import mockData, { CityItem } from './mock-data'
+//import mockData, { CityItem } from './mock-data'
 import './atIndexesTest.scss'
 
 export default class AtIndexesTest extends Component {
@@ -47,7 +47,8 @@ export default class AtIndexesTest extends Component {
             <View style='height:100vh'>
                 <AtIndexes
                     topKey='Top'
-                    list={mockData}
+                    list={list}
+                    //list={mockData}
                     onClick={this.onClick.bind(this)}
                 >
                     <View className='custom-area'>
