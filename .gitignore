@@ -2,3 +2,5 @@ node_modules
 dist
 *.exe
 
+.temp/
+src/pages/.DS_Store
