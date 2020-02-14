@@ -14,7 +14,6 @@ export default class SwiperTest extends Component {
                     className='test-h'
                     indicatorColo='#999'
                     indicatorColor='#333'
-                    vertical
                     circular
                     indicatorDots
                     autoplay
